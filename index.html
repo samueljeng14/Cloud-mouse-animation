@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cloud-mouse-animation</title>
+	<link rel="stylesheet" href="cloud-mouse-animation.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/3.3.2/screenfull.js"></script>
+	<script src="cloud-mouse-animation.js"></script>
+</head>
+<body>
+<!-- 	<div class="check fixed">
+		<div class="range"></div>
+		<div class="windowSize"></div>
+		<div class="mouse"></div>
+	</div> -->
+	<div class="cover"></div>
+	<div class="container">
+
+		<div class="full">
+			<svg class="sign" width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+			    <desc>Created with Sketch.</desc>
+			    <defs></defs>
+			    <g id="Cloud" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+			        <g id="sign1" transform="translate(-33.000000, -24.000000)"  stroke-width="5">
+			            <polyline id="Path-2" stroke-linejoin="round" points="39 49 39 29 59 29"></polyline>
+			            <polyline id="Path-2-Copy" stroke-linejoin="round" transform="translate(77.000000, 69.000000) rotate(180.000000) translate(-77.000000, -69.000000) " points="67 79 67 59 87 59"></polyline>
+			            <path d="M40.5,30.5 L85.5,77.5" id="Line-2" stroke-dasharray="23,20,23"></path>
+			        </g>
+			    </g>
+			</svg>		
+		</div>
+
+		<div class="notFull">
+			<svg class="sign" width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+			    <desc>Created with Sketch.</desc>
+			    <defs></defs>
+			    <g id="Cloud" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-dasharray="1,1">
+			        <g id="sign2" transform="translate(-126.000000, -24.000000)"  stroke-width="7">
+			            <path d="M133.5,30.5 L178.5,77.5" id="Line-2-Copy"></path>
+			            <path d="M133.5,30.5 L178.5,77.5" id="Line-2-Copy" transform="translate(156.000000, 54.000000) scale(-1, 1) translate(-156.000000, -54.000000) "></path>
+			        </g>
+			    </g>
+			</svg>			
+		</div>
+
+		<div class="reBackground"></div>
+	</div>
+
+	<!-- <p class="test"></p> -->
+	<div class="cloudSVG">
+		<svg class="cloud" id="white" width="650px" height="650px" viewBox="0 0 650 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<desc>Created with Sketch.</desc>
+			<defs></defs>
+			<g id="Cloud" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+			    <g class="uppercloud">
+			        <path d="M147.48577,241.00016 L503.014229,241.651311 L503.014229,241.651311 C555.501539,241.747441 598,284.32381 598,336.811208 L598,336.811208 L598,336.811208 C598,389.270489 555.47335,431.797138 503.01407,431.797138 L147.48593,431.797138 L147.48593,431.797138 C94.7505072,431.797138 52,389.046631 52,336.311208 L52,336.311208 L52,336.311208 C52,283.672281 94.6722812,241 147.311208,241 C147.369395,241 147.427583,241.000053 147.48577,241.00016 Z" id="Rectangle-2"></path>
+			        <circle id="Oval" cx="236.953624" cy="205.953624" r="101.953624"></circle>
+			        <circle id="Oval-Copy" cx="404.953624" cy="256.953624" r="101.953624"></circle>
+			     </g>   
+			        <path d="M212.333333,416 L212.333333,460.338736" id="Line" stroke="#F3F3F3" stroke-width="7" stroke-linecap="square"></path>
+			        <path d="M327.333333,477 L327.333333,521.338736" id="Line2" stroke="#F3F3F3" stroke-width="7" stroke-linecap="square"></path>
+			        <path d="M442.333333,439 L442.333333,483.338736" id="Line3" stroke="#F3F3F3" stroke-width="7" stroke-linecap="square"></path>
+			    
+			</g>
+		</svg>
+
+		<svg class="cloud" id="black" width="650px" height="650px" viewBox="0 0 650 650" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+		    <desc>Created with Sketch.</desc>
+		    <defs></defs>
+		    <g id="Cloud2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g class="uppercloud">
+		            <rect id="Rectangle-2" fill="#1F1F1F" x="52" y="241" width="546" height="189.971861" rx="94.9859303"></rect>
+		            <circle id="Oval" fill="#1F1F1F" cx="236.953624" cy="204.953624" r="101.953624"></circle>
+		            <circle id="Oval-Copy" fill="#1F1F1F" cx="404.953624" cy="255.953624" r="101.953624"></circle>
+		        </g>
+		            <polygon id="light3" fill="#F9EB3B" points="451.732168 401 423 468.842673 440.023843 460.898213 431.511921 509.354099 458 442.882355 442.31874 449.317194"></polygon>
+		            <polygon id="light2" fill="#F9EB3B" points="336.732168 438 308 505.842673 325.023843 497.898213 316.511921 546.354099 343 479.882355 327.31874 486.317194"></polygon>
+		            <polygon id="light1" fill="#F9EB3B" points="221.732168 383 193 450.842673 210.023843 442.898213 201.511921 491.354099 228 424.882355 212.31874 431.317194"></polygon>
+		        
+		    </g>
+		</svg>
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>
